@@ -1,5 +1,4 @@
-# CCNA Day 3 Lab: Packet Tracer Simulation Mode and OSI Layers
-
+# CCNA Day 4 Lab: Basic Device Security Commands
 ## Objective
 
 Use Packet Tracer CLI to get familiar with the commands used to configure the Cisco devices
