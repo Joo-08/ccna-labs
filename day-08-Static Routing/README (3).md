@@ -1,7 +1,8 @@
-# CCNA Day 7 Lab: Switch Interfaces and Router
+# CCNA Day 8 Lab: Static Routing
 ## Objective
 
-Use Packet Tracer to get familiar with the interfaces of the Switch and Router
+Use Packet Tracer to get familiar with the Static routing
+
 ## Tools Used
 
 - Cisco Packet Tracer
@@ -11,34 +12,25 @@ Use Packet Tracer to get familiar with the interfaces of the Switch and Router
 ---
 
 ## Task :
- Configure the hostname of R1, SW1, and SW2
+All devices have NO pre-configurations:
 
-2. Configure the appropriate IP addresses on R1, PC1, PC2, PC3, PC4
+1. Configure the PCs and routers according to the network diagram (hostnames, IP addresses, etc.)
+    Remember to configure the gateway on the PCs.
+    (You don't have to configure the switches)
 
-3. Manually configure the speed and duplex on interfaces connected to other 
-    networking devices (not end hosts)
-
-4. Configure appropriate descriptions on each interface
-
-5. Disable interfaces which are not connected to other devices
-
-6. Save the configurations
+2. Configure static routes on the routers to enable PC1 to successfully ping PC2.
 
 ### used Commands in CLI or Command Prompt 
 
 1.hostname 'hostname' - to resolve the hostname of the devices(R1,SW1,SW2)
-2.ip address 'ip-address' 'subnet-mask'
-3.configure terminal - to enter into configuration mode 
-4.interface 'interface-id' - to enter into the particular interface
-5.speed 'speed' - to specify the speed 
-6.duplex 'duplex' - to specify the duplex
-7.show interface 'interface-is' - to check the status of a interface in a router
-8.show interface status - to check the status of a all the interfaces in a switch 
-9.description 'description' - to provide the description or an interface 
-10.interface range fa0/1-24 - to configure interfaces from 1 to 24 
-11.shutdown - to make the other interfaces disable 
-12.write memory - to save the configurations in each device 
-
+2.configure terminal - to enter into configuration mode 
+3.interface 'interface-id' - to enter into the particular interface
+4.ip address 'ip-address' 'subnet-mask' - to configure ip address in the devices 
+5.no shut - to enable the connectivity of devices
+6.ip route 'ip route' 'netmask' 'next-hop' - to provide the routing details in the routing table
+7.show ip interfaces brief - to check for the informations related to the interfaces of the router 
+8.show ip route - to check the informations related to the routing in the routing table of the router
+9.ping 'ip-address' - to ping to the other PC
 
 ## Process of Configuring
 1.Configure IP address to g0/0 interface 
@@ -49,8 +41,8 @@ Use Packet Tracer to get familiar with the interfaces of the Switch and Router
 
 
 ## Conclusion
-
-Got to know about the interfaces of switch and routers and providing them description and configuring them 
+PC1 was  able to sucessfully ping PC2
+Got to know about configuring of ip addresses in Devices and static routes in routers
 
 ## Tools
 
